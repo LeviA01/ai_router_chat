@@ -1,0 +1,19 @@
+# Backend
+backend/chat.db
+backend/chat.db-*
+backend/server
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Logs
+*.log
+*.out
+
+# OS
+.DS_Store
+Thumbs.db

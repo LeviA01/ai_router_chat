@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-zinc-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-600;
+}
+
+.markdown pre {
+  @apply overflow-x-auto rounded-lg bg-zinc-900 p-3 text-sm;
+}
+
+.markdown code {
+  @apply rounded bg-zinc-800 px-1 py-0.5 text-[0.85em];
+}
+
+.markdown pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown p {
+  @apply mb-2 last:mb-0;
+}
+
+.markdown ul {
+  @apply mb-2 list-disc pl-5;
+}
+
+.markdown ol {
+  @apply mb-2 list-decimal pl-5;
+}
+
+.markdown a {
+  @apply text-indigo-400 underline;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  @apply mb-2 mt-3 font-semibold;
+}
